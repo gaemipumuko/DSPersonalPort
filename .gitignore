@@ -15,7 +15,7 @@ ehthumbs_vista.db
 !.lib
 
 ## 폴더 라면
-git rm --cached Bin/ -r
+!**/bin/
 
 # Dump file
 *.stackdump
