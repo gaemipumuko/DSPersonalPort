@@ -29,12 +29,20 @@ private:
 private:
 	CGameInstance*			m_pGameInstance = { nullptr };
 	CRenderer*				m_pRenderer = { nullptr };
+	class CSound_Manager* m_pSound_Manager = { nullptr };
+
+#ifdef _DEBUG
+private:
+	_float					m_fTimeAcc = { 0.0f };
+	_tchar					m_szFPS[MAX_PATH] = TEXT("");
+	_uint					m_iNumRender = { 0 };
+#endif
 
 private:
 	HRESULT Open_Level(LEVELID eStartLevel);
 	HRESULT Ready_Gara();
+	HRESULT Ready_Fonts();
 	HRESULT Ready_Prototype_Component_For_Static();
-
 
 public:
 	static CMainApp* Create();

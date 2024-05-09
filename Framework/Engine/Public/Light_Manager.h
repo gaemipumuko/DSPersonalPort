@@ -17,6 +17,7 @@ public:
 	HRESULT Initialize(_uint iNumLevels);
 	HRESULT Add_Light(_uint iLevelIndex, const LIGHT_DESC& LightDesc);
 	void Clear(_uint iLevelIndex);
+	HRESULT Render(_uint iLevelIndex, class CShader* pShader, class CVIBuffer_Rect* pVIBuffer);
 
 private:
 	_uint							m_iNumLevels = { 0 };

@@ -15,7 +15,7 @@ HRESULT CPipeLine::Initialize()
 	}
 
 	m_vCamPosition = _float4(0.f, 0.f, 0.f, 1.f);
-
+	m_vCamLook = _float4(0.f, 0.f, 0.f, 1.f);
 	return S_OK;
 }
 
@@ -28,6 +28,7 @@ void CPipeLine::Tick()
 	}
 
 	memcpy(&m_vCamPosition, &m_TransformMatrix_Inverse[D3DTS_VIEW].m[3][0], sizeof(_float4));
+	memcpy(&m_vCamLook, &m_TransformMatrix_Inverse[D3DTS_VIEW].m[2][0], sizeof(_float4));
 
 }
 

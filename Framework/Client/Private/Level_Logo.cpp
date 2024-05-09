@@ -19,6 +19,7 @@ HRESULT CLevel_Logo::Initialize()
 
 		
 
+
 	return S_OK;
 }
 
@@ -28,9 +29,9 @@ void CLevel_Logo::Tick(_float fTimeDelta)
 
 	if (GetKeyState(VK_SPACE) & 0x8000)
 	{
-		if (FAILED(m_pGameInstance->Open_Level(LEVEL_LOADING, CLevel_Loading::Create(m_pDevice, m_pContext, LEVEL_GAMEPLAY))))
+		if (FAILED(m_pGameInstance->Open_Level(LEVEL_LOADING, CLevel_Loading::Create(m_pDevice, m_pContext, LEVEL_TITLE))))
 		{
-			MSG_BOX("Failed to Created : Level_Loading");
+			MSG_BOX("Failed to Created : Level_Title");
 			return;
 		}	
 		return;

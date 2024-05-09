@@ -17,8 +17,15 @@ private:
 	virtual ~CPipeLine() = default;
 
 public:
+	_float Get_CamFar() const {
+		return m_fFar;
+	}
 	_float4 Get_CamPosition() const {
 		return m_vCamPosition;
+	}
+
+	_float4 Get_CamLook() const {
+		return m_vCamLook;
 	}
 
 	_float4x4 Get_Transform_Float4x4(TRANSFORMSTATE eTransformState) const {
@@ -46,6 +53,7 @@ public:
 		XMStoreFloat4x4(&m_TransformMatrix[eTransformState], TransformMatrix);
 	}
 
+	void Set_CameraFar(_float fFar) { m_fFar = fFar; }
 	
 
 public:
@@ -56,7 +64,8 @@ private:
 	_float4x4			m_TransformMatrix[D3DTS_END];
 	_float4x4			m_TransformMatrix_Inverse[D3DTS_END];
 	_float4				m_vCamPosition;
-
+	_float4				m_vCamLook;
+	_float				m_fFar;
 
 public:
 	static CPipeLine* Create();

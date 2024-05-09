@@ -18,7 +18,7 @@ HRESULT CLevel_Manager::Open_Level(_uint iLevelIndex, CLevel * pNewLevel)
 	Safe_AddRef(pGameInstance);
 
 	if(nullptr != m_pCurrentLevel)
-		pGameInstance->Clear(m_iCurrentLevelIndex);
+	pGameInstance->Clear(m_iCurrentLevelIndex);
 
 	Safe_Release(m_pCurrentLevel);
 
@@ -26,6 +26,7 @@ HRESULT CLevel_Manager::Open_Level(_uint iLevelIndex, CLevel * pNewLevel)
 
 	m_iCurrentLevelIndex = iLevelIndex;
 
+	m_bChangeLevel = false;
 
 	Safe_Release(pGameInstance);
 
@@ -48,6 +49,12 @@ HRESULT CLevel_Manager::Render()
 	return m_pCurrentLevel->Render();	
 }
 
+void CLevel_Manager::Ready_Next_Level(_uint iNextLevel, _bool bLoaded)
+{
+	m_bChangeLevel = true;
+	m_iReservedLevelIndex = iNextLevel;
+	m_bLoaded = bLoaded;
+}
 
 CLevel_Manager * CLevel_Manager::Create()
 {

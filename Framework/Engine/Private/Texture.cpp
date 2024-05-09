@@ -48,12 +48,20 @@ HRESULT CTexture::Initialize_Prototype(const wstring & strTextureFilePath, _uint
 
 		if (FAILED(hr))
 			return E_FAIL;
+		//ID3D11Texture2D* hi;
+		//pSRV->GetResource((ID3D11Resource**) & hi);
+
+		//D3D11_TEXTURE2D_DESC desc;
+		//hi->GetDesc(&desc);
 
 		m_SRVs.push_back(pSRV);
 	}
 
 	m_iNumTextures = iNumTextures;
+
+	//D3D11_BOX a;
 	
+	//m_pContext->CopySubresourceRegion
 	return S_OK;
 }
 

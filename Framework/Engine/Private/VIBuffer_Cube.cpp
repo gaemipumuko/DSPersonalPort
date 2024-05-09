@@ -100,7 +100,7 @@ HRESULT CVIBuffer_Cube::Initialize_Prototype()
 
 	/* -Y */
 	pIndices[18] = 3; pIndices[19] = 2; pIndices[20] = 6;
-	pIndices[21] = 3; pIndices[22] = 6; pIndices[23] = 2;
+	pIndices[21] = 3; pIndices[22] = 6; pIndices[23] = 7;
 
 	/* +Z */
 	pIndices[24] = 5; pIndices[25] = 4; pIndices[26] = 7;

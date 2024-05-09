@@ -6,7 +6,7 @@ CLayer::CLayer()
 
 }
 
-CComponent * CLayer::Get_Component(const wstring & strComponentTag, _uint iIndex)
+CComponent * CLayer::Get_Component(const wstring & strComponentTag, _uint iIndex, _int iPartObjectIndex)
 {
 	auto	iter = m_GameObjects.begin();
 
@@ -16,7 +16,23 @@ CComponent * CLayer::Get_Component(const wstring & strComponentTag, _uint iIndex
 	if (iter == m_GameObjects.end())
 		return nullptr;
 
-	return (*iter)->Find_Component(strComponentTag);
+	return (*iter)->Find_Component(strComponentTag, iPartObjectIndex);
+}
+
+CGameObject* CLayer::Get_Object(const wstring& strObjectName, _uint iIndex)
+{
+	CGameObject* pGameObject = nullptr;
+
+
+	for (auto iter : m_GameObjects)
+	{
+		pGameObject = iter->CompareName(strObjectName);
+
+		if (nullptr != pGameObject)
+			return pGameObject;
+	}
+
+	return nullptr;
 }
 
 HRESULT CLayer::Add_GameObject(CGameObject * pGameObject)
@@ -31,10 +47,18 @@ HRESULT CLayer::Add_GameObject(CGameObject * pGameObject)
 
 void CLayer::Tick(_float fTimeDelta)
 {
-	for (auto& pGameObject : m_GameObjects)
+	for (auto& iter = m_GameObjects.begin(); iter != m_GameObjects.end();)
 	{
-		if (nullptr != pGameObject)
-			pGameObject->Tick(fTimeDelta);
+		if ((*iter)->Get_Destroy())
+		{
+			Safe_Release(*iter);
+			iter = m_GameObjects.erase(iter);
+		}
+		else
+		{
+			(*iter)->Tick(fTimeDelta);
+			++iter;
+		}
 	}
 }
 

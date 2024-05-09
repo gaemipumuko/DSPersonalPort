@@ -37,14 +37,311 @@
     <Filter Include="02.GameObjects\01.Terrain">
       <UniqueIdentifier>{2f9c7bb8-b662-43a6-ba36-408d74b98898}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02.GameObjects\03.Sky">
+      <UniqueIdentifier>{2d385808-0364-4625-8d8e-9ac764b00c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI">
+      <UniqueIdentifier>{d0d48ecb-4e3d-438e-8a78-d2bf77310b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\00.BL_Equipment_Info">
+      <UniqueIdentifier>{faf00d12-a843-4ebc-9109-4cc23eae3ec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\01.Bonfire">
+      <UniqueIdentifier>{925e41b9-7cfa-4159-87c4-d0848e79283b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\03.InGame_Menu">
+      <UniqueIdentifier>{94e9feb0-2027-43b2-9e4f-d366152f0ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\05.Location_Name">
+      <UniqueIdentifier>{76b5dab0-e06b-42ed-9992-7d5b8a0383e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\06.Logo">
+      <UniqueIdentifier>{5d2caab8-0731-404f-92e0-4eea5c002b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\07.BC_Message">
+      <UniqueIdentifier>{2e9c7835-55d2-4aea-82a4-9ae6f4707fb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\08.NowLoading">
+      <UniqueIdentifier>{68337bc3-16b3-4823-8296-b8aa2df40375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\09.NPC_Interation">
+      <UniqueIdentifier>{e0dd8fbd-d3ed-4250-9806-b679fdf592d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\10.Player_Related">
+      <UniqueIdentifier>{13edbc15-af7d-4cb8-9368-38a535e59292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\11.Souls">
+      <UniqueIdentifier>{92924e48-7a17-40b8-8144-92e87a9768f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\12.Title">
+      <UniqueIdentifier>{8dd5590b-58e9-4db7-9b06-d9e6294409e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\00.BL_Equipment_Info\00.L_Hand">
+      <UniqueIdentifier>{9f33e347-ca2f-4eef-ac06-4b60fed1e568}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\00.BL_Equipment_Info\01.R_Hand">
+      <UniqueIdentifier>{cf2eb98a-0bf5-4f8b-ab61-313b4da59bd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\00.BL_Equipment_Info\02.Spell">
+      <UniqueIdentifier>{d90aad3f-4c21-49ba-957a-137eec35e4c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\00.BL_Equipment_Info\03.Item">
+      <UniqueIdentifier>{f30a5713-19be-4b6d-aaec-beb34c0cfc4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\00.BL_Equipment_Info\04.Durability">
+      <UniqueIdentifier>{95c3aefe-4ce3-41fd-940f-b677b7807784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\00.BL_Equipment_Info\05.Consumable_Names">
+      <UniqueIdentifier>{710de777-d84e-467c-8371-b4f20aca7899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\Title">
+      <UniqueIdentifier>{2485102b-3342-4c64-94e6-eb271f579245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\00.BackGround\Title">
+      <UniqueIdentifier>{4f83a860-ce52-4037-b266-62b249b9950a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\00.BackGround\Logo">
+      <UniqueIdentifier>{c38a2013-7425-4dbe-a414-4ccf2a907ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\05.Location_Name\Underline">
+      <UniqueIdentifier>{b84e283a-aecc-45b5-aec5-d565e14bde5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Player">
+      <UniqueIdentifier>{c160c7b0-65a9-484b-93d3-1b336f94e1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\00.BackGround\NowLoading">
+      <UniqueIdentifier>{435c07ef-08d0-4899-9c6b-e3405f2f9051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Sky\Lothric">
+      <UniqueIdentifier>{0521f7aa-51ba-4678-9bc2-88963b208d5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\00.BackGround\NowLoading\LoadingIcon">
+      <UniqueIdentifier>{c389a877-eb81-4c19-84ba-5e568c1af7c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain\Maps">
+      <UniqueIdentifier>{a1f28de0-c522-48b7-b731-62a2c32f36ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain\Maps\00.FireLinkShrine">
+      <UniqueIdentifier>{270f3426-9d23-43cf-923e-6c047f348c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\10.Player_Related\00.TL_HUD">
+      <UniqueIdentifier>{8a8a6ef0-81bb-4bea-a934-2ba5c917e00b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\00.Pledge_Icon">
+      <UniqueIdentifier>{777805ca-6632-432d-9e1e-dfe8ebb2f55e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\04.Interaction">
+      <UniqueIdentifier>{67308b6e-c020-4dae-9338-46bea25dcda4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\04.Interaction\00.ItemLoot">
+      <UniqueIdentifier>{c447e1b9-e527-4428-9171-4215fe575850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\01.HpBar">
+      <UniqueIdentifier>{7a6b020c-44c0-43d0-805f-03d5306803b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\02.FpBar">
+      <UniqueIdentifier>{5bc8a183-5445-4d07-afa8-b14aee6f6f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\03.StaminaBar">
+      <UniqueIdentifier>{a12bc805-b296-4144-9732-e104c4f75868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar">
+      <UniqueIdentifier>{5a15d12e-d873-4bb2-af6f-c66ea175af99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\13.Cursor">
+      <UniqueIdentifier>{25e60d45-b0b6-4a01-b258-9264b8145925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar\BaseBarDecor">
+      <UniqueIdentifier>{ec7b145e-dc48-4179-b097-f91feb51575a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\09.NPC_Interation\Dialogue">
+      <UniqueIdentifier>{dcd48e66-adfa-4ac9-bb18-fb7aa7134ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\09.NPC_Interation\NPC_Base">
+      <UniqueIdentifier>{04bc0088-8727-45c6-a9a4-46ae905d16ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\09.NPC_Interation\NPC_Base\NPC_ICON">
+      <UniqueIdentifier>{99af1c84-418a-4b02-a128-a9004ff13421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain\Maps\01.M40">
+      <UniqueIdentifier>{62567990-f94f-4d1f-8f42-543e51b0d6c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\14.Inventory">
+      <UniqueIdentifier>{d595ffb9-a5fb-4d59-b3b7-2e462df5ec7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Monster">
+      <UniqueIdentifier>{45294577-c6d9-4013-a8bf-0d8e448066f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\15.UI_Select">
+      <UniqueIdentifier>{d578e1f1-3936-4268-8986-2e54fc26889d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\15.UI_Select\Square">
+      <UniqueIdentifier>{0a396436-3881-49af-84ea-d05071cb15c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\15.UI_Select\Tag_Select">
+      <UniqueIdentifier>{ffc9ba89-f92b-45a5-844c-982166341c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC">
+      <UniqueIdentifier>{0f32ac0a-3869-45a6-8ab2-fbee67c80afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC\00.FireKeeper">
+      <UniqueIdentifier>{d8cf9e09-0aa3-4f5b-93a3-79283f79f64a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC\01.Andre">
+      <UniqueIdentifier>{36b99124-566d-4d8f-b17c-03993135856a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC\02.Shrine HandMaid">
+      <UniqueIdentifier>{35f066ac-72cb-4c95-8d8c-6c2f7fdd02a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC\01.Andre\Anvil">
+      <UniqueIdentifier>{c6a8fc9e-62b8-4603-8ca0-37ef6262527b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Monster\05.Hollow Soldier%28C1100%29">
+      <UniqueIdentifier>{dbd99a94-b407-4bb2-843b-fc3c34f9e91b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Monster\02.Lothric_Knight%28C1280%29">
+      <UniqueIdentifier>{095e525b-0443-401f-a044-6828075ad263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Monster\00.BlackKnight%28C1300%29">
+      <UniqueIdentifier>{bb6376b6-32b8-444b-8b34-276e6e0f6b9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Monster\06.Basilisk%28C2140%29">
+      <UniqueIdentifier>{a1fdd719-4bdd-489d-8f4d-fc7f4c7908c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Monster\04.Champion Gundyr%28C5110%29">
+      <UniqueIdentifier>{03773c8d-8737-43e7-ad79-dcb440f9f165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Monster\03.Vordt of Boreal Vally%28C2240%29">
+      <UniqueIdentifier>{f9a770f9-aedb-4047-92a3-a7c90c64ec6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Monster\01.Darkeater Midyr%28C6211%29">
+      <UniqueIdentifier>{075aa689-cd53-4006-8abd-82451c006301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\09.NPC_Interation\Level_Up">
+      <UniqueIdentifier>{32ae2dc5-3bab-442e-af4c-cdfb165c6f63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Player\PlayerParts">
+      <UniqueIdentifier>{164e6203-e326-406b-a9c3-c82db0677030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Player\PlayerParts\L_Hand">
+      <UniqueIdentifier>{c8e96559-21b6-433f-8b3f-0a32a2cef437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Player\PlayerParts\R_Hand">
+      <UniqueIdentifier>{a2d9cbda-ffbc-47b5-bbcd-71b26ab9e2f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Player\PlayerParts\Head">
+      <UniqueIdentifier>{a1f31f9d-af2f-47e2-bd83-50318f9c53f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\Level_M40">
+      <UniqueIdentifier>{847ec719-1b6c-47aa-ac4e-390836b112e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Player\PlayerParts\Body">
+      <UniqueIdentifier>{ffc7fd67-ca2a-47b6-b956-6014dcf23aa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Player\PlayerParts\Arm">
+      <UniqueIdentifier>{1594c096-92d1-440c-9604-6e20324cb362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Player\PlayerParts\Leg">
+      <UniqueIdentifier>{dd794962-ca7f-4dda-b2ef-06a55d26ffc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Player\WP_0206">
+      <UniqueIdentifier>{b3cc26ef-dea0-40e9-bb97-928d6f9d6c4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\16.Monster_UI">
+      <UniqueIdentifier>{f90e090b-d6ec-4fd6-bd09-8a5944dcaa69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\16.Monster_UI\HpBar">
+      <UniqueIdentifier>{b95f40ac-54dc-4f9d-8606-38a1f334c0bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\16.Monster_UI\HpBar\Bar">
+      <UniqueIdentifier>{c84a3bbb-2d29-4a21-9083-6a83fa1b5064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Monster\07.Yhorm The Giant%28C5260%29">
+      <UniqueIdentifier>{2e0d9ba2-fa01-4ab9-bd7c-78a873cf0662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain\Maps\02.Undead_Settlement">
+      <UniqueIdentifier>{a06d521c-9da8-4244-a89e-5e8245b1f5e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\FireLink">
+      <UniqueIdentifier>{e0150683-001c-415e-80f2-f141fb40b2f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\Gundyr">
+      <UniqueIdentifier>{bc3cbd93-3e0d-42a5-8ca1-779de07a8dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain\Maps\03.Gundyr">
+      <UniqueIdentifier>{ab6c0a23-5f81-4aaf-b239-bb326b9f0dbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\07.Effects">
+      <UniqueIdentifier>{b80319f0-ff44-4515-8829-9f8785b17949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\07.Effects\Point">
+      <UniqueIdentifier>{3ec4c984-7c2e-48e3-b4e1-d97533cfc605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\07.Effects\Rect">
+      <UniqueIdentifier>{3136fac1-ade3-4999-9b8f-de6afa21df0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\98.Land_Objects">
+      <UniqueIdentifier>{6d11f30b-0374-46b9-bf58-1b38bdd6cad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\08.Items">
+      <UniqueIdentifier>{5c7b92b7-b5fa-46fc-bcef-738ab1b182df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\08.Items\Consumables">
+      <UniqueIdentifier>{36f93c16-66db-47dc-b336-5802c0b668b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain\MapObjects">
+      <UniqueIdentifier>{2ba3c9b9-02dc-4f2a-8326-fbdf9937c5e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain\MapObjects\Bonfire">
+      <UniqueIdentifier>{e0415597-2dcf-41de-b323-1c5c266ac370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\02.BossRelated">
+      <UniqueIdentifier>{835b717e-4d72-4902-82dd-4974d8532035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\02.BossRelated\01.BossHpBar">
+      <UniqueIdentifier>{d728e091-d0d1-4d7c-9601-992303c5c7ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\02.BossRelated\00.BossHpBarBase">
+      <UniqueIdentifier>{49ec057a-33a9-4463-927a-ddc95868fb46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\17.Milestone">
+      <UniqueIdentifier>{19c9946b-9997-4714-8c2b-3044472983e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\17.Milestone\00.Kuro_Obi">
+      <UniqueIdentifier>{de863133-4ea7-4e62-8d38-ba9160874090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\17.Milestone\01.Text">
+      <UniqueIdentifier>{992724cf-0b8b-466e-9d53-64618e8121f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\17.Milestone\02.Blurr">
+      <UniqueIdentifier>{44648e72-6101-4208-b1cd-882aae22c500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain\Maps\00.FireLinkShrine\PickMesh">
+      <UniqueIdentifier>{000a157c-4fe7-4d74-b4f3-99f37faf989f}</UniqueIdentifier>
+    </Filter>
     <Filter Include="02.GameObjects\02.Camera">
       <UniqueIdentifier>{0b291732-e4b5-4e09-b104-9b9eb26aba6c}</UniqueIdentifier>
     </Filter>
     <Filter Include="02.GameObjects\02.Camera\Free">
       <UniqueIdentifier>{c404841a-f5b2-4a93-ba14-5b3aed4b5895}</UniqueIdentifier>
     </Filter>
-    <Filter Include="02.GameObjects\03.Sky">
-      <UniqueIdentifier>{2d385808-0364-4625-8d8e-9ac764b00c09}</UniqueIdentifier>
+    <Filter Include="02.GameObjects\01.Terrain\Maps\02.Undead_Settlement\PickMesh">
+      <UniqueIdentifier>{29738f5c-7c97-484e-b7c3-e0009b908049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain\Maps\03.Gundyr\PickMesh">
+      <UniqueIdentifier>{7a8eeec7-683d-49e5-b928-9297220199fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Sound">
+      <UniqueIdentifier>{3e07c554-6c1e-4b19-aa3f-3101a8ddce9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Sound\FMOD">
+      <UniqueIdentifier>{667ad047-2084-4c6e-aba3-618b79bbaf21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Sound\Manager">
+      <UniqueIdentifier>{809a17f7-7ace-448b-b28d-87c6a3d7a626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.UI\09.NPC_Interation\Dialogue\Script">
+      <UniqueIdentifier>{061e922e-75e8-4420-ae7f-dc346df9789b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -78,9 +375,6 @@
     <ClInclude Include="..\Public\Level_Logo.h">
       <Filter>01.Levels\Logo</Filter>
     </ClInclude>
-    <ClInclude Include="..\Public\BackGround.h">
-      <Filter>02.GameObjects\00.BackGround</Filter>
-    </ClInclude>
     <ClInclude Include="..\Public\Terrain.h">
       <Filter>02.GameObjects\01.Terrain</Filter>
     </ClInclude>
@@ -89,6 +383,237 @@
     </ClInclude>
     <ClInclude Include="..\Public\Sky.h">
       <Filter>02.GameObjects\03.Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Title.h">
+      <Filter>01.Levels\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Title_Background.h">
+      <Filter>02.GameObjects\00.BackGround\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BackGround.h">
+      <Filter>02.GameObjects\00.BackGround\Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Area_Name_Center.h">
+      <Filter>02.GameObjects\99.UI\05.Location_Name</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Player.h">
+      <Filter>02.GameObjects\04.Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Lothric_Sky.h">
+      <Filter>02.GameObjects\03.Sky\Lothric</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ITEM_HUD_BOX.h">
+      <Filter>02.GameObjects\99.UI\00.BL_Equipment_Info\00.L_Hand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Loading_Icon.h">
+      <Filter>02.GameObjects\00.BackGround\NowLoading\LoadingIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Loading_Info.h">
+      <Filter>02.GameObjects\00.BackGround\NowLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Souls_Indicator.h">
+      <Filter>02.GameObjects\99.UI\11.Souls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Fire_Link_Shrine.h">
+      <Filter>02.GameObjects\01.Terrain\Maps\00.FireLinkShrine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Interaction.h">
+      <Filter>02.GameObjects\99.UI\04.Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Pledge_Icon.h">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\00.Pledge_Icon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Loot.h">
+      <Filter>02.GameObjects\99.UI\04.Interaction\00.ItemLoot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Loading_Icon_Text.h">
+      <Filter>02.GameObjects\00.BackGround\NowLoading\LoadingIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Cursor.h">
+      <Filter>02.GameObjects\99.UI\13.Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Base_Bar.h">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Boss_Bar_Base.h">
+      <Filter>02.GameObjects\99.UI\02.BossRelated\00.BossHpBarBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Boss_Hp_Bar.h">
+      <Filter>02.GameObjects\99.UI\02.BossRelated\01.BossHpBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Base_Bar_RB.h">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar\BaseBarDecor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Base_Bar_RT.h">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar\BaseBarDecor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Base_Bar_L.h">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar\BaseBarDecor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Player_Stamina_Bar.h">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\03.StaminaBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Player_Fp_Bar.h">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\02.FpBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Player_Hp_Bar.h">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\01.HpBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Main_Menu.h">
+      <Filter>02.GameObjects\99.UI\03.InGame_Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Dialogue_BG.h">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_NPC_Base.h">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\NPC_Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_NPC_Icon.h">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\NPC_Base\NPC_ICON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Map_M40.h">
+      <Filter>02.GameObjects\01.Terrain\Maps\01.M40</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Inventory_Base.h">
+      <Filter>02.GameObjects\99.UI\14.Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LandObject.h">
+      <Filter>02.GameObjects\98.Land_Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Select_Square.h">
+      <Filter>02.GameObjects\99.UI\15.UI_Select\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Tag_Select.h">
+      <Filter>02.GameObjects\99.UI\15.UI_Select\Tag_Select</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Midir.h">
+      <Filter>02.GameObjects\05.Monster\01.Darkeater Midyr%28C6211%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FireKeeper.h">
+      <Filter>02.GameObjects\06.NPC\00.FireKeeper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BlackSmith_Andre.h">
+      <Filter>02.GameObjects\06.NPC\01.Andre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Shrine_Handmaid.h">
+      <Filter>02.GameObjects\06.NPC\02.Shrine HandMaid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Lothric_Knight.h">
+      <Filter>02.GameObjects\05.Monster\02.Lothric_Knight%28C1280%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Black_Knight.h">
+      <Filter>02.GameObjects\05.Monster\00.BlackKnight%28C1300%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Underline.h">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_LVUP.h">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\Level_Up</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_M40.h">
+      <Filter>01.Levels\Level_M40</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Player_BD.h">
+      <Filter>02.GameObjects\04.Player\PlayerParts\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Player_RHand.h">
+      <Filter>02.GameObjects\04.Player\PlayerParts\R_Hand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Player_LG.h">
+      <Filter>02.GameObjects\04.Player\PlayerParts\Leg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Player_HD.h">
+      <Filter>02.GameObjects\04.Player\PlayerParts\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Player_AM.h">
+      <Filter>02.GameObjects\04.Player\PlayerParts\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Player_LHand.h">
+      <Filter>02.GameObjects\04.Player\PlayerParts\L_Hand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Monster_HP_Base.h">
+      <Filter>02.GameObjects\99.UI\16.Monster_UI\HpBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Monster_Hp_Bar.h">
+      <Filter>02.GameObjects\99.UI\16.Monster_UI\HpBar\Bar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Giant_Yhorm.h">
+      <Filter>02.GameObjects\05.Monster\07.Yhorm The Giant%28C5260%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Champion_Gundyr.h">
+      <Filter>02.GameObjects\05.Monster\04.Champion Gundyr%28C5110%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UndeadSettlement.h">
+      <Filter>02.GameObjects\01.Terrain\Maps\02.Undead_Settlement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_FireLink.h">
+      <Filter>01.Levels\FireLink</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Gundyr.h">
+      <Filter>01.Levels\Gundyr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Map_Gundyr.h">
+      <Filter>02.GameObjects\01.Terrain\Maps\03.Gundyr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Particle_Rect.h">
+      <Filter>02.GameObjects\07.Effects\Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Particle_Point.h">
+      <Filter>02.GameObjects\07.Effects\Point</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Estus_Flask.h">
+      <Filter>02.GameObjects\08.Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Bonfire.h">
+      <Filter>02.GameObjects\01.Terrain\MapObjects\Bonfire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MileStone_Text.h">
+      <Filter>02.GameObjects\99.UI\17.Milestone\01.Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MileStone_Blurr.h">
+      <Filter>02.GameObjects\99.UI\17.Milestone\02.Blurr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Kuro_Obi.h">
+      <Filter>02.GameObjects\99.UI\17.Milestone\00.Kuro_Obi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Fire_Link_Shrine_Pick.h">
+      <Filter>02.GameObjects\01.Terrain\Maps\00.FireLinkShrine\PickMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Untended_Pick.h">
+      <Filter>02.GameObjects\01.Terrain\Maps\03.Gundyr\PickMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Undead_Settlement_Pick.h">
+      <Filter>02.GameObjects\01.Terrain\Maps\02.Undead_Settlement\PickMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Reference\Headers\FMOD\fmod_dsp.h">
+      <Filter>96.Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Reference\Headers\FMOD\fmod_dsp_effects.h">
+      <Filter>96.Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Reference\Headers\FMOD\fmod_errors.h">
+      <Filter>96.Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Reference\Headers\FMOD\fmod_output.h">
+      <Filter>96.Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Reference\Headers\FMOD\fmod.h">
+      <Filter>96.Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Reference\Headers\FMOD\fmod.hpp">
+      <Filter>96.Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Reference\Headers\FMOD\fmod_codec.h">
+      <Filter>96.Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Reference\Headers\FMOD\fmod_common.h">
+      <Filter>96.Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Sound_Manager.h">
+      <Filter>96.Sound\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Script_FireKeeper.h">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\Dialogue\Script</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -113,9 +638,6 @@
     <ClCompile Include="..\Private\Level_Logo.cpp">
       <Filter>01.Levels\Logo</Filter>
     </ClCompile>
-    <ClCompile Include="..\Private\BackGround.cpp">
-      <Filter>02.GameObjects\00.BackGround</Filter>
-    </ClCompile>
     <ClCompile Include="..\Private\Terrain.cpp">
       <Filter>02.GameObjects\01.Terrain</Filter>
     </ClCompile>
@@ -124,6 +646,213 @@
     </ClCompile>
     <ClCompile Include="..\Private\Sky.cpp">
       <Filter>02.GameObjects\03.Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Title.cpp">
+      <Filter>01.Levels\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Title_BackGround.cpp">
+      <Filter>02.GameObjects\00.BackGround\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BackGround.cpp">
+      <Filter>02.GameObjects\00.BackGround\Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Area_Name_Center.cpp">
+      <Filter>02.GameObjects\99.UI\05.Location_Name</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Player.cpp">
+      <Filter>02.GameObjects\04.Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Lothric_Sky.cpp">
+      <Filter>02.GameObjects\03.Sky\Lothric</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ITEM_HUD_BOX.cpp">
+      <Filter>02.GameObjects\99.UI\00.BL_Equipment_Info\00.L_Hand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Loading_Icon.cpp">
+      <Filter>02.GameObjects\00.BackGround\NowLoading\LoadingIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Loading_Info.cpp">
+      <Filter>02.GameObjects\00.BackGround\NowLoading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Souls_Indicator.cpp">
+      <Filter>02.GameObjects\99.UI\11.Souls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Pledge_Icon.cpp">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\00.Pledge_Icon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Interaction.cpp">
+      <Filter>02.GameObjects\99.UI\04.Interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Loot.cpp">
+      <Filter>02.GameObjects\99.UI\04.Interaction\00.ItemLoot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Loading_Icon_Text.cpp">
+      <Filter>02.GameObjects\00.BackGround\NowLoading\LoadingIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Cursor.cpp">
+      <Filter>02.GameObjects\99.UI\13.Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Base_Bar.cpp">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Boss_Bar_Base.cpp">
+      <Filter>02.GameObjects\99.UI\02.BossRelated\00.BossHpBarBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Boss_Hp_Bar.cpp">
+      <Filter>02.GameObjects\99.UI\02.BossRelated\01.BossHpBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Player_Hp_Bar.cpp">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\01.HpBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Player_Fp_Bar.cpp">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\02.FpBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Player_Stamina_Bar.cpp">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\03.StaminaBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Base_Bar_RB.cpp">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar\BaseBarDecor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Base_Bar_RT.cpp">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar\BaseBarDecor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Base_Bar_L.cpp">
+      <Filter>02.GameObjects\99.UI\10.Player_Related\00.TL_HUD\04.BaseBar\BaseBarDecor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Main_Menu.cpp">
+      <Filter>02.GameObjects\99.UI\03.InGame_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Dialogue_BG.cpp">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\Dialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_NPC_Base.cpp">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\NPC_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_NPC_Icon.cpp">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\NPC_Base\NPC_ICON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Map_M40.cpp">
+      <Filter>02.GameObjects\01.Terrain\Maps\01.M40</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Inventory_Base.cpp">
+      <Filter>02.GameObjects\99.UI\14.Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\LandObject.cpp">
+      <Filter>02.GameObjects\98.Land_Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Select_Square.cpp">
+      <Filter>02.GameObjects\99.UI\15.UI_Select\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Tag_Select.cpp">
+      <Filter>02.GameObjects\99.UI\15.UI_Select\Tag_Select</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Black_Knight.cpp">
+      <Filter>02.GameObjects\05.Monster\00.BlackKnight%28C1300%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Midir.cpp">
+      <Filter>02.GameObjects\05.Monster\01.Darkeater Midyr%28C6211%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FireKeeper.cpp">
+      <Filter>02.GameObjects\06.NPC\00.FireKeeper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BlackSmith_Andre.cpp">
+      <Filter>02.GameObjects\06.NPC\01.Andre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Shrine_Handmaid.cpp">
+      <Filter>02.GameObjects\06.NPC\02.Shrine HandMaid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Lothric_Knight.cpp">
+      <Filter>02.GameObjects\05.Monster\02.Lothric_Knight%28C1280%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Underline.cpp">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_LVUP.cpp">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\Level_Up</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_M40.cpp">
+      <Filter>01.Levels\Level_M40</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Player_BD.cpp">
+      <Filter>02.GameObjects\04.Player\PlayerParts\Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Player_RHand.cpp">
+      <Filter>02.GameObjects\04.Player\PlayerParts\R_Hand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Player_LG.cpp">
+      <Filter>02.GameObjects\04.Player\PlayerParts\Leg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Player_HD.cpp">
+      <Filter>02.GameObjects\04.Player\PlayerParts\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Player_AM.cpp">
+      <Filter>02.GameObjects\04.Player\PlayerParts\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Player_LHand.cpp">
+      <Filter>02.GameObjects\04.Player\PlayerParts\L_Hand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Monster_HP_Base.cpp">
+      <Filter>02.GameObjects\99.UI\16.Monster_UI\HpBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Monster_Hp_Bar.cpp">
+      <Filter>02.GameObjects\99.UI\16.Monster_UI\HpBar\Bar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Giant_Yhorm.cpp">
+      <Filter>02.GameObjects\05.Monster\07.Yhorm The Giant%28C5260%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Champion_Gundyr.cpp">
+      <Filter>02.GameObjects\05.Monster\04.Champion Gundyr%28C5110%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UndeadSettlement.cpp">
+      <Filter>02.GameObjects\01.Terrain\Maps\02.Undead_Settlement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_FireLink.cpp">
+      <Filter>01.Levels\FireLink</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Gundyr.cpp">
+      <Filter>01.Levels\Gundyr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Map_Gundyr.cpp">
+      <Filter>02.GameObjects\01.Terrain\Maps\03.Gundyr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Particle_Rect.cpp">
+      <Filter>02.GameObjects\07.Effects\Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Particle_Point.cpp">
+      <Filter>02.GameObjects\07.Effects\Point</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Estus_Flask.cpp">
+      <Filter>02.GameObjects\08.Items\Consumables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Bonfire.cpp">
+      <Filter>02.GameObjects\01.Terrain\MapObjects\Bonfire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MileStone_Text.cpp">
+      <Filter>02.GameObjects\99.UI\17.Milestone\01.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MileStone_Blurr.cpp">
+      <Filter>02.GameObjects\99.UI\17.Milestone\02.Blurr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Kuro_Obi.cpp">
+      <Filter>02.GameObjects\99.UI\17.Milestone\00.Kuro_Obi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Fire_Link_Shrine_Pick.cpp">
+      <Filter>02.GameObjects\01.Terrain\Maps\00.FireLinkShrine\PickMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Fire_Link_Shrine.cpp">
+      <Filter>02.GameObjects\01.Terrain\Maps\00.FireLinkShrine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Untended_Pick.cpp">
+      <Filter>02.GameObjects\01.Terrain\Maps\03.Gundyr\PickMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Undead_Settlement_Pick.cpp">
+      <Filter>02.GameObjects\01.Terrain\Maps\02.Undead_Settlement\PickMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Sound_Manager.cpp">
+      <Filter>96.Sound\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Script_FireKeeper.cpp">
+      <Filter>02.GameObjects\99.UI\09.NPC_Interation\Dialogue\Script</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +881,18 @@
       <Filter>97.ShaderFiles</Filter>
     </FxCompile>
     <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxCubeTex.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxAnimMesh.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_Vtxtex_Particle.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPoint_Particle.hlsl">
       <Filter>97.ShaderFiles</Filter>
     </FxCompile>
   </ItemGroup>

@@ -98,6 +98,12 @@ void CVIBuffer::Free()
 {
 	__super::Free();
 
+	if (false == m_isCloned)
+		Safe_Delete_Array(m_pVerticesPos);
+
+	if (false == m_isCloned)
+		Safe_Delete_Array(m_pIndices);
+
 	Safe_Release(m_pIB);
 	Safe_Release(m_pVB);
 

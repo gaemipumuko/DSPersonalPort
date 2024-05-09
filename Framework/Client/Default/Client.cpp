@@ -151,6 +151,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
       return FALSE;
    }
 
+   SetMenu(hWnd, NULL);
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
 
@@ -201,6 +202,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_DESTROY:
         PostQuitMessage(0);
         break;
+
+    case WM_KEYDOWN:
+        if (wParam == VK_ESCAPE)
+        {
+            PostQuitMessage(0);
+       }
+        break;
+
     default:
         return DefWindowProc(hWnd, message, wParam, lParam);
     }

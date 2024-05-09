@@ -7,14 +7,14 @@ CObject_Manager::CObject_Manager()
 {
 }
 
-CComponent * CObject_Manager::Get_Component(_uint iLevelIndex, const wstring & strLayerTag, const wstring & strComponentTag, _uint iIndex)
+CComponent * CObject_Manager::Get_Component(_uint iLevelIndex, const wstring & strLayerTag, const wstring & strComponentTag, _uint iIndex, _int iPartObjectIndex)
 {
 	CLayer*		pLayer = Find_Layer(iLevelIndex, strLayerTag);
 
 	if (nullptr == pLayer)
 		return nullptr;
 
-	return pLayer->Get_Component(strComponentTag, iIndex);
+	return pLayer->Get_Component(strComponentTag, iIndex, iPartObjectIndex);
 	
 }
 
@@ -40,6 +40,19 @@ HRESULT CObject_Manager::Add_Prototype(const wstring& strPrototypeTag, CGameObje
 	m_Prototype.emplace(strPrototypeTag, pPrototype);
 
 	return S_OK;
+}
+
+CGameObject* CObject_Manager::Clone_GameObject(const wstring& strPrototypeTag, void* pArg)
+{
+	CGameObject* pPrototype = Find_Prototype(strPrototypeTag);
+	if (nullptr == pPrototype)
+		return nullptr;
+
+	CGameObject* pGameObject = pPrototype->Clone(pArg);
+	if (nullptr == pGameObject)
+		return nullptr;
+
+	return pGameObject;
 }
 
 
@@ -132,6 +145,27 @@ CLayer * CObject_Manager::Find_Layer(_uint iLevelIndex, const wstring & strLayer
 		return nullptr;
 
 	return iter->second;
+}
+
+CGameObject* CObject_Manager::Get_Object(_uint iLevelIndex, const wstring& strLayerTag, const wstring& strObjectName, _uint iIndex)
+{
+	CLayer* pLayer = Find_Layer(iLevelIndex, strLayerTag);
+
+	if (nullptr == pLayer)
+		return nullptr;
+
+	return pLayer->Get_Object(strObjectName, iIndex);
+}
+
+_uint CObject_Manager::Get_NumObjects(_uint iLevelIndex, const wstring& strLayerTag)
+{
+	CLayer* pLayer = Find_Layer(iLevelIndex, strLayerTag);
+
+	if (nullptr == pLayer)
+		return 0;
+
+
+	return pLayer->Get_NumObjects();
 }
 
 CObject_Manager * CObject_Manager::Create(_uint iNumLevels)

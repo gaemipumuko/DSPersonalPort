@@ -18,6 +18,10 @@ public:
 	virtual void Tick(_float fTimeDelta) override;
 	virtual HRESULT Render() override;
 
+
+private:
+	HRESULT Ready_Layer_BackGround(const wstring& strLayerTag);
+
 private:
 	/* 로딩 다음레벨이 누구냐! */
 	LEVELID				m_eNextLevelID = { LEVEL_END };

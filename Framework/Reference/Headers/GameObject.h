@@ -32,9 +32,12 @@ public:
 	virtual void Tick(_float fTimeDelta);
 	virtual void LateTick(_float fTimeDelta);
 	virtual HRESULT Render();
+	virtual HRESULT Render_Shadow() { return S_OK; }
+	_bool Get_Destroy() { return m_bDestroy; }
 
 public:
-	class CComponent* Find_Component(const wstring& strComTag);
+	virtual class CComponent* Find_Component(const wstring& strComTag, _int iPartObjectIndex = -1);
+	CGameObject* CompareName(const wstring& strObjectName);
 
 protected:
 	ID3D11Device*				m_pDevice = { nullptr };
@@ -47,6 +50,8 @@ protected:
 protected:
 	/* 다른 오브젝트가 현재 오브젝트의 컴포넌트를 탐색하기 용이하도록. */
 	map<const wstring, class CComponent*>		m_Components;
+	wstring m_strObjName;
+	_bool			m_bDestroy = { false };
 
 protected:
 	HRESULT Add_Components(_uint iLevelIndex, 

@@ -3,10 +3,16 @@
 
 #include "Level_Loading.h"
 #include "GameInstance.h"
-
+#include "Sound_Manager.h"
+#include "BackGround.h"
+#include "Loading_Icon.h"
+#include "Loading_Info.h"
+#include "Loading_Icon_Text.h"
+#include "Cursor.h"
 
 CMainApp::CMainApp()
 	: m_pGameInstance(CGameInstance::Get_Instance())
+	,m_pSound_Manager(CSound_Manager::Get_Instance())
 {	
 	// D3D11_SAMPLER_DESC 
 
@@ -42,10 +48,13 @@ HRESULT CMainApp::Initialize()
 	//m_pContext->OMSetDepthStencilState();
 	//m_pContext->RSSetState();
 
-	if (FAILED(Ready_Gara()))
-		return E_FAIL;
+	//if (FAILED(Ready_Gara()))
+	//	return E_FAIL;
 
 	if (FAILED(Ready_Prototype_Component_For_Static()))
+		return E_FAIL;
+
+	if (FAILED(Ready_Fonts()))
 		return E_FAIL;
 
 	if (FAILED(Open_Level(LEVEL_LOGO)))
@@ -56,9 +65,15 @@ HRESULT CMainApp::Initialize()
 
 void CMainApp::Tick(_float fTimeDelta)
 {
+	ShowCursor(FALSE);
+
 	if (nullptr == m_pGameInstance)
 		return;
 
+#ifdef _DEBUG
+	m_fTimeAcc += fTimeDelta;
+#endif
+	 
 	m_pGameInstance->Tick_Engine(fTimeDelta);
 }
 
@@ -68,12 +83,32 @@ HRESULT CMainApp::Render()
 		nullptr == m_pRenderer)
 		return E_FAIL;
 
-	m_pGameInstance->Clear_BackBuffer_View(_float4(0.f, 0.f, 1.f, 1.f));
+	m_pGameInstance->Clear_BackBuffer_View(_float4(1.f, 1.f, 1.f, 1.f));
 	m_pGameInstance->Clear_DepthStencil_View();
 
 	m_pRenderer->Draw_RenderGroup();
 
+#ifdef _DEBUG	
+	++m_iNumRender;
+
+	if (m_fTimeAcc >= 1.f)
+	{
+		wsprintf(m_szFPS, TEXT("장비 FPS : %d"), m_iNumRender);
+		m_fTimeAcc = 0;
+		m_iNumRender = 0;
+	}
+
+	m_pGameInstance->Render_Text(TEXT("Font_Default"), wstring(m_szFPS), _float2(0.f, 0.f), 0.5f, Colors::BurlyWood);
+
+#endif
+
 	m_pGameInstance->Present();
+
+	if (m_pGameInstance->Change_Level())
+	{
+		if (FAILED(m_pGameInstance->Open_Level(LEVEL_LOADING, CLevel_Loading::Create(m_pDevice, m_pContext, static_cast<LEVELID>(m_pGameInstance->Get_Reserved_Level_Index())))))
+			return E_FAIL;
+	}
 
 	return S_OK;
 }
@@ -169,10 +204,62 @@ HRESULT CMainApp::Ready_Gara()
 	return S_OK;
 }
 
+HRESULT CMainApp::Ready_Fonts()
+{
+	// MakeSpriteFont "넥슨lv1고딕 Bold" /FontSize:30 /FastPack /CharacterRegion:0x0020-0x00FF /CharacterRegion:0x3131-0x3163 /CharacterRegion:0xAC00-0xD800 /DefaultCharacter:0xAC00 138ex.spritefont
+	if (FAILED(m_pGameInstance->Add_Font(TEXT("Font_Default"), TEXT("../Bin/Resources/Fonts/138ex.spriteFont"))))
+		return E_FAIL;
+
+	return S_OK;
+}
+
 HRESULT CMainApp::Ready_Prototype_Component_For_Static()
 {
 	if (nullptr == m_pGameInstance)
 		return E_FAIL;
+
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Texture_Cursor"),
+		CTexture::Create(m_pDevice, m_pContext, TEXT("../Bin/Resources/Textures/Cursor.png")))))
+		return E_FAIL;
+
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Texture_BackGround"),
+		CTexture::Create(m_pDevice, m_pContext, TEXT("../Bin/Resources/Textures/MENU_BNE_Logo.dds")))))
+		return E_FAIL;
+
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Texture_Loading_Item_Info"),
+		CTexture::Create(m_pDevice, m_pContext, TEXT("../Bin/Resources/Textures/UI/Loading/Item_Info/exLoading%d.jpg"),7))))
+		return E_FAIL;
+
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Texture_Loading_Icon"),
+		CTexture::Create(m_pDevice, m_pContext, TEXT("../Bin/Resources/Textures/UI/Loading/output/Loading_Icon%d.png"),31))))
+		return E_FAIL;
+
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Texture_Loading_Icon_Text"),
+		CTexture::Create(m_pDevice, m_pContext, TEXT("../Bin/Resources/Textures/UI/Loading/LoadingIcon_LOGO.dds")))))
+		return E_FAIL;
+
+
+	if (FAILED(m_pGameInstance->Add_Prototype(TEXT("Prototype_GameObject_Cursor"),
+		CMouse::Create(m_pDevice, m_pContext))))
+		return E_FAIL;
+
+	if (FAILED(m_pGameInstance->Add_Prototype(TEXT("Prototype_GameObject_BackGround"),
+		CBackGround::Create(m_pDevice, m_pContext))))
+		return E_FAIL;
+
+	if (FAILED(m_pGameInstance->Add_Prototype(TEXT("Prototype_GameObject_Loading_Icon"),
+		CLoading_Icon::Create(m_pDevice, m_pContext))))
+		return E_FAIL;
+
+	if (FAILED(m_pGameInstance->Add_Prototype(TEXT("Prototype_GameObject_Loading_Icon_Text"),
+		CLoading_Icon_Text::Create(m_pDevice, m_pContext))))
+		return E_FAIL;
+
+	if (FAILED(m_pGameInstance->Add_Prototype(TEXT("Prototype_GameObject_Loading_Info"),
+		CLoading_Info::Create(m_pDevice, m_pContext))))
+		return E_FAIL;
+
+
 
 	/* 모든 레벨에서 사용하는 컴포넌트들을 미리 추가해놓는다. */
 	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Renderer"),
@@ -188,6 +275,35 @@ HRESULT CMainApp::Ready_Prototype_Component_For_Static()
 	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Shader_VtxTex"),
 		CShader::Create(m_pDevice, m_pContext, TEXT("../Bin/ShaderFiles/Shader_VtxTex.hlsl"), VTXPOSTEX::VertexElements, VTXPOSTEX::iNumElements))))
 		return E_FAIL;	
+
+
+	/* For.Prototype_Component_VIBuffer_Rect_Instancing */
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_VIBuffer_Rect_Instancing"),
+		CVIBuffer_Rect_Instancing::Create(m_pDevice, m_pContext, 200))))
+		return E_FAIL;
+
+	/* For.Prototype_Component_Shader_Vtxtex_Particle */
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Shader_VtxTex_Particle"),
+		CShader::Create(m_pDevice, m_pContext, TEXT("../Bin/ShaderFiles/Shader_Vtxtex_Particle.hlsl"), VTXRECT_INSTANCE::VertexElements, VTXRECT_INSTANCE::iNumElements))))
+		return E_FAIL;
+
+	/* For.Prototype_Component_Shader_VtxPoint_Particle */
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Shader_VtxPoint_Particle"),
+		CShader::Create(m_pDevice, m_pContext, TEXT("../Bin/ShaderFiles/Shader_VtxPoint_Particle.hlsl"), VTXPOINT_INSTANCE::VertexElements, VTXPOINT_INSTANCE::iNumElements))))
+		return E_FAIL;
+
+
+	_matrix		PivotMatrix = XMMatrixIdentity();
+
+	PivotMatrix = XMMatrixScaling(0.02f, 0.02f, 0.02f) * XMMatrixRotationY(XMConvertToRadians(180.0f));
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Model_Tarnished"),
+		CModel::Create(m_pDevice, m_pContext, CModel::TYPE_ANIM, "../Bin/DataFiles/Loaded/Model_C0000.dat", PivotMatrix))))
+		return E_FAIL;
+
+	PivotMatrix = XMMatrixScaling(0.06f, 0.06f, 0.06f);
+	if (FAILED(m_pGameInstance->Add_Prototype(LEVEL_STATIC, TEXT("Prototype_Component_Model_Bonfire"),
+		CModel::Create(m_pDevice, m_pContext, CModel::TYPE_NONANIM, "../Bin/DataFiles/Loaded/Model_obj0000.dat", PivotMatrix))))
+		return E_FAIL;
 
 	Safe_AddRef(m_pRenderer);
 
@@ -212,6 +328,7 @@ void CMainApp::Free()
 	Safe_Release(m_pRenderer);
 	Safe_Release(m_pContext);
 	Safe_Release(m_pDevice);
+	Safe_Release(m_pSound_Manager);
 
 	/* 증가되어있는 레퍼런스 카운트르 ㄹ감소시킨다. */
 	Safe_Release(m_pGameInstance);

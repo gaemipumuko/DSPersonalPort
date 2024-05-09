@@ -3,6 +3,7 @@
 #include "Client_Defines.h"
 #include "Camera.h"
 
+
 BEGIN(Client)
 
 class CCamera_Free final : public CCamera
@@ -25,8 +26,15 @@ public:
 	virtual void Tick(_float fTimeDelta) override;
 	virtual void LateTick(_float fTimeDelta) override;
 
+	void	SetUp_Camera(_float fCamDist = 0.f);
+
 private:
+	_float			m_fRotation = {};
 	_float			m_fMouseSensor = { 0.f };
+	_float			m_fCameraAngleY = {0.f};
+	_float			m_fPastPlayerY = { 0.f };
+
+	_vector			m_vCameraCentre = {};
 
 public:
 	static CCamera_Free* Create(ID3D11Device* pDevice, ID3D11DeviceContext* pContext);

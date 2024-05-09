@@ -61,6 +61,17 @@ void CLight_Manager::Clear(_uint iLevelIndex)
 	m_pLights[iLevelIndex].clear();
 }
 
+HRESULT CLight_Manager::Render(_uint iLevelIndex, CShader* pShader, CVIBuffer_Rect* pVIBuffer)
+{
+	if (iLevelIndex >= m_iNumLevels)
+		return E_FAIL;
+
+	for (auto& pLight : m_pLights[iLevelIndex])
+		pLight->Render(pShader, pVIBuffer);
+
+	return S_OK;
+}
+
 CLight_Manager * CLight_Manager::Create(_uint iNumLevels)
 {
 	CLight_Manager* pInstance = new CLight_Manager();

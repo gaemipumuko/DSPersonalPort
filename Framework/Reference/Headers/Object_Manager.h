@@ -14,12 +14,15 @@ private:
 	virtual ~CObject_Manager() = default;
 
 public:
-	class CComponent* Get_Component(_uint iLevelIndex, const wstring& strLayerTag, const wstring& strComponentTag, _uint iIndex = 0);
+	class CComponent* Get_Component(_uint iLevelIndex, const wstring& strLayerTag, const wstring& strComponentTag, _uint iIndex , _int iPartObjectIndex);
+	class CGameObject* Get_Object(_uint iLevelIndex, const wstring& strLayerTag, const wstring& strObjectName, _uint iIndex = 0);
+	_uint Get_NumObjects(_uint iLevelIndex, const wstring& strLayerTag);
 
 public:
 	/* 레이어들을 레벨별로 보관하기위해. 미리 레이어를 보관하는 컨테이너를 레벨만큼 할당한다. */
 	HRESULT Initialize(_uint iNumLevels);
 	HRESULT Add_Prototype(const wstring& strPrototypeTag, class CGameObject*);
+	class CGameObject* Clone_GameObject(const wstring& strPrototypeTag, void* pArg);
 	HRESULT Add_Layers(_uint iLevelIndex, const wstring& LayerTag, const wstring& strPrototypeTag, void* pArg = nullptr);
 	void Tick(_float fTimeDelta);
 	void LateTick(_float fTimeDelta);
@@ -35,11 +38,6 @@ private:
 private:
 	class CGameObject* Find_Prototype(const wstring& strPrototypeTag);
 	class CLayer* Find_Layer(_uint iLevelIndex, const wstring& strLayerTag);
-
-	
-
-
-
 
 public:
 	static CObject_Manager* Create(_uint iNumLevels);

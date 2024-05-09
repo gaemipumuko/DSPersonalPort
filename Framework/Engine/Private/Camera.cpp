@@ -42,6 +42,7 @@ void CCamera::Tick(_float fTimeDelta)
 	/* 카메라가 가지고 있는 Transform 이란녀석은 현재 카메라의 최종적인 월드 상태를 가지고 있다.  */	
 	m_pGameInstance->Set_Transform(CPipeLine::D3DTS_VIEW, m_pTransformCom->Get_WorldFloat4x4_Inverse());	
 	m_pGameInstance->Set_Transform(CPipeLine::D3DTS_PROJ, XMMatrixPerspectiveFovLH(m_fFovy, m_fAspect, m_fNear, m_fFar));
+	m_pGameInstance->Set_CameraFar(m_fFar);
 }
 
 void CCamera::LateTick(_float fTimeDelta)

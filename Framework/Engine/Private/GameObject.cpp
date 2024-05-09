@@ -89,7 +89,7 @@ HRESULT CGameObject::Add_Components(_uint iLevelIndex, const wstring& strPrototy
 	return S_OK;
 }
 
-CComponent * CGameObject::Find_Component(const wstring & strComTag)
+CComponent * CGameObject::Find_Component(const wstring & strComTag, _int iPartObjectIndex)
 {
 	auto	iter = m_Components.find(strComTag);
 
@@ -97,6 +97,14 @@ CComponent * CGameObject::Find_Component(const wstring & strComTag)
 		return nullptr;
 
 	return iter->second;	
+}
+
+CGameObject* CGameObject::CompareName(const wstring& strObjectName)
+{
+	if (0 == m_strObjName.compare(strObjectName))
+		return this;
+
+	return nullptr;
 }
 
 void CGameObject::Free()

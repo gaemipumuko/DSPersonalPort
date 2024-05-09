@@ -1,4 +1,5 @@
-#include "..\Public\VIBuffer_Terrain.h"
+#include "..\Public\VIBuffer_Terrain.h"	
+#include "Transform.h"
 
 CVIBuffer_Terrain::CVIBuffer_Terrain(ID3D11Device * pDevice, ID3D11DeviceContext * pContext)
 	: CVIBuffer(pDevice, pContext)

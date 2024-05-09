@@ -21,6 +21,9 @@ protected:
 	ID3D11Buffer*						m_pVB = { nullptr };
 	ID3D11Buffer*						m_pIB = { nullptr };
 
+	_float3*							m_pVerticesPos = { nullptr };                      
+	_uint*								m_pIndices = { nullptr };
+
 	_uint								m_iNumVertexBuffers = { 0 };
 	
 	_uint								m_iVertexStride = { 0 };
